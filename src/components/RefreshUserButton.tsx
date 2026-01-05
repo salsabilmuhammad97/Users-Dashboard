@@ -11,7 +11,12 @@ export default function RefreshUsersButton() {
             variant="contained"
             onClick={() => dispatch(fetchUsers())}
             disabled={loading}
-            sx={{ mb: 2, height: "30px", color: "white", fontSize: "12px", textTransform: "capitalize" }}
+            sx={{
+                mb: 2, height: "30px", color: "white", fontSize: "12px", textTransform: "capitalize",
+                "@media (max-width: 999px)": {
+                    width: '100%'
+                }
+            }}
             size='small'
         >
             {loading ? 'Refreshing...' : 'Refresh Users'}

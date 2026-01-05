@@ -72,7 +72,7 @@ export default function Sidebar() {
                         flexDirection: 'column',
                         width: '100%',
                         gap: 1,
-                        [MOBILE_BREAKPOINT]: { flexDirection: 'row' },
+                        [MOBILE_BREAKPOINT]: { flexDirection: 'row', gap: 0 },
                     }}
                 >
                     {navItems.map((item) => (
@@ -95,7 +95,7 @@ export default function Sidebar() {
                     ))}
 
                     {/* Logout */}
-                    <ListItem disablePadding sx={{ [MOBILE_BREAKPOINT]: { width: 'auto' } }}>
+                    <ListItem disablePadding>
                         <ListItemButton onClick={handleLogout} sx={commonButtonStyles}>
                             <ExitToAppIcon sx={{ fontSize: 20 }} />
                             <ListItemText

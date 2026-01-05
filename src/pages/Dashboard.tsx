@@ -50,7 +50,11 @@ export default function Dashboard() {
                     justifyContent: "space-between",
                     alignItems: "center",
                     mb: 3,
-                    gap: 2
+                    gap: 2,
+                    "@media (max-width: 999px)": {
+                        flexDirection: "column",
+                        gap: 0
+                    }
                 }}
             >
                 <SearchBar />

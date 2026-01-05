@@ -25,7 +25,8 @@ export default function SearchBar() {
                     }
                 },
                 "@media (max-width: 999px)": {
-                    width: '50%'
+                    width: '100%',
+                    mb: "8px"
                 }
             }}
             size='small'
